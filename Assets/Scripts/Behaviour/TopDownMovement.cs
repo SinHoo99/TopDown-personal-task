@@ -6,7 +6,7 @@ public class TopDownMovement : MonoBehaviour
     private Rigidbody2D movementRigidbody;
 
     private Vector2 movementDirection = Vector2.zero;
-
+    public int speed;
     private void Awake()
     {
         // 같은 게임오브젝트의 TopDownController, Rigidbody를 가져올 것 
@@ -35,7 +35,7 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
-        direction = direction * 5;
+        direction = direction * speed;
 
         movementRigidbody.velocity = direction;
     }

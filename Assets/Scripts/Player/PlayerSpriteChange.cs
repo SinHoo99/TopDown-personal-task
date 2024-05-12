@@ -1,27 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerSpriteChange : MonoBehaviour
 {
     public Sprite knightSprite; // 기사 스프라이트
     public Sprite mageSprite;   // 마법사 스프라이트
 
-    private SpriteRenderer spriteRenderer; // 플레이어의 스프라이트 렌더러
-    private void Start()
+    public Image playerImage; // 플레이어 이미지
+
+    private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>(); // 스프라이트 렌더러 컴포넌트 가져오기
+        // 초기 이미지 설정
+        SetPlayerImage(PlayerCharSet.PlayerCharacter.KNIGHT);
     }
 
-    public void SpriteChange(PlayerCharSet.PlayerCharacter character)
+    // 플레이어 이미지 변경 메서드
+    public void SetPlayerImage(PlayerCharSet.PlayerCharacter character)
     {
-        switch (character) // 여기서 playerCharacter에 접근
+        switch (character)
         {
             case PlayerCharSet.PlayerCharacter.KNIGHT:
-                spriteRenderer.sprite = knightSprite; // 기사 스프라이트 설정
+                playerImage.sprite = knightSprite; // 기사 스프라이트 설정
                 break;
             case PlayerCharSet.PlayerCharacter.MAGE:
-                spriteRenderer.sprite = mageSprite; // 마법사 스프라이트 설정
+                playerImage.sprite = mageSprite; // 마법사 스프라이트 설정
                 break;
             default:
                 break;

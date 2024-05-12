@@ -11,6 +11,7 @@ public class CharacterAnimationController : AnimationController
 
     private readonly float magnituteThreshold = 0.5f;
 
+
     protected override void Awake()
     {
         base.Awake();
@@ -26,4 +27,5 @@ public class CharacterAnimationController : AnimationController
         animator.SetBool(IsWalking, obj.magnitude > magnituteThreshold);
     }
 
+   
 }
