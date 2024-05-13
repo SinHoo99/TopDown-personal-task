@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 15037765}
   - component: {fileID: 15037764}
   - component: {fileID: 15037763}
+  - component: {fileID: 15037767}
   m_Layer: 5
   m_Name: JoinBtn
   m_TagString: Untagged
@@ -270,6 +271,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15037761}
   m_CullTransparentMesh: 1
+--- !u!114 &15037767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15037761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f11b70d14746db439c2b1b4fba109c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameText: {fileID: 1422548668}
+  inputField: {fileID: 1204320123}
+  SelectUICanvas: {fileID: 1649627196}
+  confirmButton: {fileID: 15037764}
+  npcManager: {fileID: 0}
 --- !u!1 &65608862
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class PlayerNameSet : MonoBehaviour
     public InputField inputField;
     [SerializeField] private Canvas SelectUICanvas;
     public Button confirmButton; // 확인 버튼을 가리키는 변수
+    public NpcManager npcManager;
 
     private void Start()
     {
@@ -15,7 +16,7 @@ public class PlayerNameSet : MonoBehaviour
         // 입력 필드의 내용이 변경될 때마다 호출되는 이벤트 리스너 설정
         inputField.onValueChanged.AddListener(OnNameFieldChanged);
         // 확인 버튼 클릭 시 호출되는 이벤트 리스너 설정
-        confirmButton?.onClick.AddListener(OnChangeButtonClicked);     
+        confirmButton?.onClick.AddListener(OnChangeButtonClicked);
     }
 
     // 이름 입력 필드에서 텍스트가 변경될 때 호출되는 함수
@@ -73,5 +74,12 @@ public class PlayerNameSet : MonoBehaviour
             // 유효하지 않은 이름에 대한 처리
             Debug.LogWarning("이름은 2~10 글자 사이여야 합니다.");
         }
+    }
+
+    public void OnNpcButtonClick()
+    {
+        // PlayerPrefs에서 저장된 플레이어 이름을 가져와서 이를 npcManager에 전달하여 업데이트합니다.
+        string playerName = PlayerPrefs.GetString("PlayerName");
+        npcManager.UpdatePlayerName(playerName);
     }
 }
