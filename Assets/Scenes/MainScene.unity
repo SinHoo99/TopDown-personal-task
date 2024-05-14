@@ -19351,7 +19351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcListText: {fileID: 1649115301}
-  scanObject: {fileID: 0}
+  npc: {fileID: 146917810}
 --- !u!1 &1766400722
 GameObject:
   m_ObjectHideFlags: 0
@@ -20276,7 +20276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcListText: {fileID: 1649115301}
-  scanObject: {fileID: 0}
+  npc: {fileID: 0}
 --- !u!1 &2026110507
 GameObject:
   m_ObjectHideFlags: 0

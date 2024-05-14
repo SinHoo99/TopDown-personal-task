@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NpcManager : MonoBehaviour
 {
     public Text npcListText;
-    public GameObject scanObject;
+    public GameObject npc;
 
     private void Start()
     {
@@ -36,7 +36,7 @@ public class NpcManager : MonoBehaviour
         // NPC 목록을 문자열로 변환
         string npcText = "참석인원:\n";
         npcText += "- " + playerName + "\n";
-        npcText += "- NPC\n";
+        npcText += "- " + npc.name+"\n";
 
         // NPC 목록을 UI Text로 업데이트
         npcListText.text = npcText;
