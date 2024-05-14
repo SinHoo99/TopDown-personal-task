@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TalkBtn : MonoBehaviour
 {
-    public GameObject Talk;
-    public GameObject Info;
+    public GameObject Talk; // 대화할거냐 묻는창
+    public GameObject Info; // 실제 대화 창
 
     public void ShowInfoBtn()
     {

@@ -8,6 +8,7 @@ public class StartBtn : MonoBehaviour
 {
     public InputField inputField;
 
+    //시작할때 InputField에 있는 텍스트를 플레이어 이름으로 저장
     public void OnJoinButtonClicked()
     {
         string playerName = inputField.text;

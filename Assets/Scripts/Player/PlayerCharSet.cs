@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerCharSet : MonoBehaviour
 {
+    //플레이어 직업 
     public enum PlayerCharacter
     {
         KNIGHT,
@@ -48,6 +49,8 @@ public class PlayerCharSet : MonoBehaviour
         PlayerPrefs.SetString("PlayerJob", currentPlayerCharacter);
         PlayerPrefs.Save(); // 변경된 설정을 영구적으로 저장
     }
+
+    //직업을 변경을 위해 스프라이트를 눌렀을때 이미지 변경
     private void SelectedJob()
     {
         PlayerChoiceCanvas.gameObject.SetActive(false);

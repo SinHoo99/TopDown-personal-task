@@ -78,7 +78,7 @@ public class PlayerNameSet : MonoBehaviour
 
     public void OnNpcButtonClick()
     {
-        // PlayerPrefs에서 저장된 플레이어 이름을 가져와서 이를 npcManager에 전달하여 업데이트합니다.
+        // PlayerPrefs에서 저장된 플레이어 이름을 가져와서 이를 npcManager에 전달하여 업데이트
         string playerName = PlayerPrefs.GetString("PlayerName");
         npcManager.UpdatePlayerName(playerName);
     }

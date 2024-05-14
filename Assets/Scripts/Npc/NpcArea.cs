@@ -36,7 +36,7 @@ public class NpcArea : MonoBehaviour
         else if (isPlayerInside)
         {
             // 플레이어가 범위를 벗어난 상태이고, 이전에 범위 내에 있었다면
-            // 대화 버튼이 비활성화되어야 합니다.
+            // 대화 버튼이 비활성화
             foreach (GameObject obj in objectsToActivate)
             {
                 obj.SetActive(false);
@@ -50,7 +50,7 @@ public class NpcArea : MonoBehaviour
         }
     }
 
-    // 시각적으로 범위를 표시하기 위해 OnDrawGizmos 함수를 사용합니다.
+    // 시각적으로 범위를 표시하기 위해 OnDrawGizmos 함수를 사용
     private void OnDrawGizmosSelected()
     {
         // 범위를 원으로 그리기 위한 코드
