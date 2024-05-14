@@ -34,7 +34,7 @@ public class NpcManager : MonoBehaviour
         }
 
         // NPC 목록을 문자열로 변환
-        string npcText = "NPC 목록:\n";
+        string npcText = "참석인원:\n";
         npcText += "- " + playerName + "\n";
         npcText += "- NPC\n";
 
