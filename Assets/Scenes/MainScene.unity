@@ -2626,7 +2626,7 @@ GameObject:
   - component: {fileID: 146917813}
   - component: {fileID: 146917812}
   m_Layer: 7
-  m_Name: Npc
+  m_Name: Boss
   m_TagString: Npc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
